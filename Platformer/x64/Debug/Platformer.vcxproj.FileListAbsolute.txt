@@ -1,0 +1,2 @@
+C:\Users\ray55\source\repos\Platformer\x64\Debug\Platformer.exe
+C:\Users\ray55\source\repos\Platformer\x64\Debug\Platformer.pdb

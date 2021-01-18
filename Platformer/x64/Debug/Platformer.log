@@ -1,0 +1,17 @@
+﻿  Actor.cpp
+  AnimSpriteComponent.cpp
+  Assets.cpp
+  BackgroundSpriteComponent.cpp
+  Component.cpp
+  Game.cpp
+  Grid.cpp
+  InputComponent.cpp
+  Main.cpp
+  MoveComponent.cpp
+C:\Users\ray55\source\repos\Platformer\MoveComponent.cpp(21,45): error C2676: binary '+': 'const Vector2' does not define this operator or a conversion to a type acceptable to the predefined operator
+  Player.cpp
+  Renderer.cpp
+  SpriteComponent.cpp
+  Texture.cpp
+  Tile.cpp
+  Generating Code...
