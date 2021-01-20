@@ -11,7 +11,7 @@ CounterForceComponent::CounterForceComponent(Actor* ownerP, float gravityF, floa
 void CounterForceComponent::AddGravity(float gravityF, float dt)
 {
 	gravity = gravityF;
-	Vector2 newPosition = owner.setPosition() + gravity * dt;
+	Vector2 newPosition = owner.getPosition().y + gravity * dt;
 	owner.setPosition(newPosition);
 }
 
