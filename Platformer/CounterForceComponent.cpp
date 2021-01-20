@@ -2,22 +2,24 @@
 #include "Maths.h"
 #include "Actor.h"
 
-CounterForceComponent::CounterForceComponent(Actor* ownerP, float gravityF, float dragF, float downf, float forwardf) 
-	: Component(ownerP), gravity(gravityF), drag(dragF), down(downf), forward(forwardf)
+CounterForceComponent::CounterForceComponent(Actor* ownerP, float gravityf, float dragf)
+	: Component(ownerP), gravity(gravityf), drag(dragf)
 {
-	down = owner.getPosition().y;
+
 }
 
 void CounterForceComponent::AddGravity(float gravityF, float dt)
 {
 	gravity = gravityF;
-	Vector2 newPosition = owner.getPosition().y + gravity * dt;
+	Vector2 oldPosition = owner.getPosition();
+	Vector2 newPosition = Vector2(oldPosition.x, oldPosition.y + gravity * dt);
 	owner.setPosition(newPosition);
 }
 
 void CounterForceComponent::AddDrag(float dragF, float dt)
 {
 	drag = dragF;
-	Vector2 newPosition = owner.getPosition().x + drag * dt;
+	Vector2 oldPosition = owner.getPosition();
+	Vector2 newPosition = Vector2(oldPosition.x - drag * dt, oldPosition.y);
 	owner.setPosition(newPosition);
 }

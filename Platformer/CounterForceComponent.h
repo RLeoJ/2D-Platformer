@@ -4,7 +4,7 @@
 class CounterForceComponent : public Component
 {
 public:
-	CounterForceComponent(Actor* ownerP, float gravityF, float dragF, float downF, float forwardF);
+	CounterForceComponent(Actor* ownerP, float gravityF, float dragF);
 	CounterForceComponent() = delete;
 	CounterForceComponent(const CounterForceComponent&) = delete;
 	CounterForceComponent& operator =(const CounterForceComponent&) = delete;
@@ -15,6 +15,4 @@ public:
 private:
 	float gravity = 9.8f;
 	float drag = 5.0f;
-	float down;
-	float forward;
 };
