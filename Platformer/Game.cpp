@@ -6,6 +6,7 @@
 #include "Assets.h"
 #include "BackgroundSpriteComponent.h"
 #include "Player.h"
+#include "CounterForceComponent.h"
 
 bool Game::initialize()
 {
@@ -26,7 +27,7 @@ void Game::load()
 
 	//Player
 	Player* player = new Player();
-	player->setPosition(Vector2{ 100,300 });
+	player->setPosition(Vector2{ 100,640 });
 
 	grid = new Grid();
 }

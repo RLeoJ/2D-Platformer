@@ -6,9 +6,4 @@ class Player : public Actor
 {
 public:
 	Player();
-
-	bool AmIGrounded() { return grounded; }
-
-private:
-	bool grounded;
 };

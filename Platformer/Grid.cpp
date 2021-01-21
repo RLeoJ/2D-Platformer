@@ -18,8 +18,12 @@ Grid::Grid() : Actor(), selectedTile(nullptr)
 			tiles[i][j] = new Tile();
 			tiles[i][j]->setPosition(Vector2(TILESIZE / 2.0f + j * TILESIZE, START_Y + i * TILESIZE));
 			tiles[i][j]->setTileState(Tile::TileState::Pass);
-			tiles[i][7]->setTileState(Tile::TileState::Block);
-		}
+			
+		}		
+		
 	}
-
+	for (size_t i = 0; i < NB_ROWS; i++)
+	{
+		tiles[11][i]->setTileState(Tile::TileState::Block);
+	}
 }

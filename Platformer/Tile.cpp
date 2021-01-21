@@ -21,7 +21,7 @@ void Tile::updateTexture()
 	switch (tileState)
 	{
 	case TileState::Block:
-		text = "GroundTile";
+		text = "Ground";
 		break;
 	case TileState::Pass:
 		text = "";
