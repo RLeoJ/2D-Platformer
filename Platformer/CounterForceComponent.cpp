@@ -1,9 +1,8 @@
 #include "CounterForceComponent.h"
 #include "Maths.h"
-#include "Player.h"
 
-CounterForceComponent::CounterForceComponent(Actor* ownerP, float gravityf, float dragf)
-	: Component(ownerP), gravity(gravityf), drag(dragf)
+CounterForceComponent::CounterForceComponent(Actor* ownerP, float gravityf, float dragf, int updateOrderP)
+	: Component(ownerP, updateOrderP), gravity(gravityf), drag(dragf)
 {
 
 }

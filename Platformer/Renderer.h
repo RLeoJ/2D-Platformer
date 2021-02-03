@@ -34,6 +34,7 @@ public:
 	SDL_Renderer* toSDLRenderer() const { return SDLRenderer; }
 	void close();
 
+
 private:
 	SDL_Renderer* SDLRenderer = nullptr;
 	std::vector<SpriteComponent*> sprites;

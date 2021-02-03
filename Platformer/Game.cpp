@@ -7,6 +7,7 @@
 #include "BackgroundSpriteComponent.h"
 #include "Player.h"
 #include "CounterForceComponent.h"
+#include "Enemy.h"
 
 bool Game::initialize()
 {
@@ -24,10 +25,15 @@ void Game::load()
 	//Load Textures
 	Assets::loadTexture(renderer, "Res\\GroundTile.png", "Ground");
 	Assets::loadTexture(renderer, "Res\\Player1.png", "Player");
+	Assets::loadTexture(renderer, "Res\\Enemy.png", "Enemy");
 
 	//Player
 	Player* player = new Player();
 	player->setPosition(Vector2{ 100,640 });
+
+	//Enemy
+	Enemy* enemy = new Enemy();
+	enemy->setPosition(Vector2{ 200, 600 });
 
 	grid = new Grid();
 }
@@ -125,6 +131,9 @@ void Game::update(float dt)
 	{
 		delete deadActor;
 	}
+
+	//Gravity
+	
 }
 
 void Game::render()

@@ -3,6 +3,7 @@
 #include "Assets.h"
 #include "Maths.h"
 #include "InputComponent.h"
+#include "CounterForceComponent.h"
 
 Player::Player() : Actor()
 {

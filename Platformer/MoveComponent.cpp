@@ -6,7 +6,7 @@
 MoveComponent::MoveComponent(Actor* ownerP, int updateOrderP)
 	: Component(ownerP, updateOrderP), forwardSpeed(0.0f)
 {
-
+	
 }
 
 void MoveComponent::setForwardSpeed(float forwardSpeedP)

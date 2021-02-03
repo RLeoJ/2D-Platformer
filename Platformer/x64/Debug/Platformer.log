@@ -1,7 +1,5 @@
-﻿  Actor.cpp
+﻿  CounterForceComponent.cpp
   Game.cpp
-  Grid.cpp
-  Main.cpp
-  SpriteComponent.cpp
+  Player.cpp
   Generating Code...
   Platformer.vcxproj -> C:\Users\ray55\source\repos\Platformer\x64\Debug\Platformer.exe
